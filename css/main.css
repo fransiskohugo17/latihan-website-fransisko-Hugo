@@ -1,0 +1,99 @@
+.jumbotron {
+    background-image: url(../assets/image/2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    position: relative;
+    width: 90%;
+    margin: auto;
+}
+
+.jumbotron::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.menubar {
+    width: 90%;
+    margin: auto;
+}
+
+.carousel {
+    box-shadow: 10px 20px 30px rgba(0, 0, 0, 0.7);
+}
+
+.img-thumbnail {
+    position: relative;
+}
+
+.box-text {
+    width: 90%;
+    padding: 10px;
+    background-color: rgba(26, 35, 126, 0.9);
+    margin: auto;
+    color: white;
+    font-weight: bold;
+}
+
+.box-berita .card {
+    transition: .3s;
+}
+
+.box-berita .card:hover {
+    transform: scale(1.1);
+}
+
+.navbar ul li {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.box-berita {
+    margin: auto;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: rgb(238, 238, 238);
+    width: 90%;
+}
+
+#menu {
+    padding: 30px;
+}
+
+.menubar .navbar ul li a {
+    /* padding: 10px 12px; */
+    color: white;
+    background-color: rgb(26, 35, 126);
+    transition: .3s;
+    font-weight: bold;
+}
+
+.menubar .navbar ul li a:hover {
+    background-color: rgb(20, 27, 104);
+}
+
+.list-group-item {
+    background-color: rgb(26, 35, 126);
+    border: 2px solid white;
+    color: white;
+    transition: .3s;
+}
+
+.list-group-item:hover {
+    background-color: rgb(15, 21, 78);
+}
+
+@media screen and (max-width:768px) {
+    .navbar ul li a {
+        padding-left: 0;
+        padding-right: 0;
+        text-align: center;
+    }
+}
